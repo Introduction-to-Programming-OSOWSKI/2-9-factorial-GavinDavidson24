@@ -1,7 +1,12 @@
 #WRITE YOUR CODE IN THIS FILE
 def factorial(x):
-    y = 1
-    for i in range(1, (x-1)):
-       y = y * (x - i) 
+    total= 1
 
-print(factorial(5))
+    for i in range(x, 1, -1):
+        total = total * i
+
+    return total
+
+
+
+print(factorial(10))
